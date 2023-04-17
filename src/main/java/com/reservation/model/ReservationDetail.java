@@ -1,4 +1,4 @@
-package com.bookingcalendar.model;
+package com.reservation.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
