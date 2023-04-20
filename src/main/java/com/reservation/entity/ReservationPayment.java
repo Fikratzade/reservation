@@ -1,4 +1,4 @@
-package com.reservation.model;
+package com.reservation.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,14 +7,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "reservation_payment")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReservationPayment extends Base_Entity{
+public class ReservationPayment extends BaseEntity {
+
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @OneToOne
     @JoinColumn(name = "reservation_id")

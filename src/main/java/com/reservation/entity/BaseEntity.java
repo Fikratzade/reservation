@@ -1,4 +1,4 @@
-package com.reservation.model;
+package com.reservation.entity;
 
 import jakarta.persistence.MappedSuperclass;
 import lombok.AllArgsConstructor;
@@ -15,7 +15,8 @@ import java.time.Instant;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Base_Entity {
+public class BaseEntity {
+
     private boolean is_deleted;
     @UpdateTimestamp
     private Instant updated_date;

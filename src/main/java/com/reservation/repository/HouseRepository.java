@@ -1,6 +1,6 @@
 package com.reservation.repository;
 
-import com.reservation.model.House;
+import com.reservation.entity.House;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

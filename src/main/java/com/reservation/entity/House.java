@@ -1,4 +1,4 @@
-package com.reservation.model;
+package com.reservation.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,14 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "house")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class House extends Base_Entity{
+public class House extends BaseEntity {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
 
