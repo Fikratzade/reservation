@@ -16,7 +16,6 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
-    width: 100%;
 }
 .calendar .month {
     display: flex;
@@ -92,5 +91,13 @@ body {
     background: #0a3d62;
     color: #fff;
     font-weight: 600;
+}
+.btn-custom-left {
+	width:49%; 
+	float:right;
+}
+.btn-custom-right {
+	width:49%; 
+	float:left;	
 }
  
