@@ -12,6 +12,7 @@ import java.time.LocalDate;
 
 @Controller
 public class CalendarController {
+
     @GetMapping("/index")
     public String homePage(@RequestParam(name = "year",required = false,defaultValue = "0") int year,
                            @RequestParam(name = "month",required = false,defaultValue = "0") String month,
